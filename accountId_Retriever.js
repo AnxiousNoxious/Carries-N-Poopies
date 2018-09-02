@@ -1,5 +1,5 @@
 const https = require('https');
-const apiKey = 'RGAPI-7d2f82d0-a6b9-4f26-affc-ed585e00be04';
+const apiKey = 'RGAPI-1908de2b-a4a3-44cb-aa6e-032afafa9370';
 const nameList = [];
 const memberList = [];
 
@@ -31,7 +31,7 @@ for (i=0;i<memberList.length;i++){
         res.on('data', data => {
             dataNoBrackets = data.slice(1,-1);
             dataArray = (dataNoBrackets.toString()).split(",");
-/*             memberList[i].accountId = dataArray[1].slice(12); */
+            memberList[i].accountId = dataArray[1].slice(12);
         });
     });
 }
