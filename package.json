@@ -1,0 +1,19 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnxiousNoxious/Carries-N-Poopies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnxiousNoxious/Carries-N-Poopies/issues"
+  },
+  "homepage": "https://github.com/AnxiousNoxious/Carries-N-Poopies#readme",
+  "description": ""
+}
