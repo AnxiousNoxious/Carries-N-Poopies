@@ -15,5 +15,8 @@
     "url": "https://github.com/AnxiousNoxious/Carries-N-Poopies/issues"
   },
   "homepage": "https://github.com/AnxiousNoxious/Carries-N-Poopies#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
 }
