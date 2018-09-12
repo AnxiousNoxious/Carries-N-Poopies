@@ -1,5 +1,5 @@
 const axios = require('axios');
-const apiKey = 'RGAPI-b036412e-39f9-466d-9197-6c1e3d3884f4';
+const apiKey = 'RGAPI-8e5b852e-40bc-4b03-86d6-d0e7ca68965b';
 
 function getAccounts(names){
     const members = [];
