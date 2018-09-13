@@ -1,12 +1,12 @@
 const axios = require('axios');
-const apiKey = 'RGAPI-8e5b852e-40bc-4b03-86d6-d0e7ca68965b';
+const apiKey = 'RGAPI-c1f837b5-c011-44ad-b9a0-92a15b1590a3';
 
 function getAccounts(names){
     const members = [];
     for (let i=0; i<names.length; i++){
         axios.get(`https://kr.api.riotgames.com/lol/summoner/v3/summoners/by-name/${encodeURI(names[i])}?api_key=${apiKey}`)
         .then(res => {members[i] = res.data;
-        console.log(members[i].accountId);})
+        })
         .catch(error => {console.log(`error`);});
     }
     return members;
@@ -18,7 +18,6 @@ function getMatches(accounts){
         axios.get(`https://kr.api.riotgames.com/lol/match/v3/matchlists/by-account/${accounts[i].accountId}?api_key=${apiKey}`)
         .then(res => {
             matches[i] = res.data;
-            console.log(matches[i]);
         })
     }
 }
